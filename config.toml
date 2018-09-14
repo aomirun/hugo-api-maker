@@ -3,25 +3,27 @@ languageCode = "en-us"
 title = "rougon"
 
 [outputs]
-  page = ["json","players"]
-  home = ["json", "redirect"]
-  teams = ["json"]
-  section = ["json"]
-  taxonomy = ["json", "players"]
+    page = ["json","players"]
+    home = ["json", "redirect"]
+    teams = ["json"]
+    section = ["json"]
+    taxonomy = ["json", "players"]
 
 [mediaTypes."text/netlify"]
-suffix = ""
-delimiter = ""
+    suffixes = [""]
+    delimiter = ""
 
 [outputFormats.players]
-baseName = "players"
-mediatype ="application/json"
+    baseName = "players"
+    mediatype ="application/json"
+
 [outputFormats.redirect]
-mediatype = "text/netlify"
-baseName = "_redirects"
+    mediatype = "text/netlify"
+    baseName = "_redirects"
+
 [taxonomies]
-  sport = "sports"
-  practice = "practices"
+    sport = "sports"
+    practice = "practices"
 
 [permalinks]
-  page = "/:section/:title/"
+    page = "/:section/:title/"
